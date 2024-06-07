@@ -64,6 +64,7 @@
     <Compile Include="Assets\Scripts\BlockSetter.cs" />
     <Compile Include="Assets\Scripts\InventoryManager.cs" />
     <Compile Include="Assets\Scripts\GameManager.cs" />
+    <Compile Include="Assets\Scripts\ExplosiveBullet.cs" />
     <Compile Include="Assets\Scripts\BlockData.cs" />
     <Compile Include="Assets\Scripts\BuilderController.cs" />
   </ItemGroup>

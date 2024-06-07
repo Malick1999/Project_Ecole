@@ -359,6 +359,7 @@
 "Assets/Scripts/BlockData.cs"
 "Assets/Scripts/BlockSetter.cs"
 "Assets/Scripts/BuilderController.cs"
+"Assets/Scripts/ExplosiveBullet.cs"
 "Assets/Scripts/GameManager.cs"
 "Assets/Scripts/InventoryManager.cs"
 "Assets/Scripts/PlayerSwitcher.cs"

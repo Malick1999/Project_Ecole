@@ -50,8 +50,18 @@ public class BuilderController : MonoBehaviour
         horizontal = Input.GetAxis("Horizontal");
         vertical = Input.GetAxis("Vertical");
 
-        if (Input.GetKeyDown(KeyCode.Space))
-            Jump();
+        if (Input.GetKey(KeyCode.Space))
+            rb.position += Vector3.up * speed * Time.deltaTime;
+
+        else if (Input.GetKey(KeyCode.RightShift))
+            rb.position += Vector3.down * speed * Time.deltaTime;
+
+        else
+        {
+            newVelocity = rb.velocity;
+            newVelocity.y = 0;
+            rb.velocity = newVelocity;
+        }
 
         mouseX = Input.GetAxis("Mouse X") * mouseSensitivity * Time.deltaTime;
         mouseY = Input.GetAxis("Mouse Y") * mouseSensitivity * Time.deltaTime;
